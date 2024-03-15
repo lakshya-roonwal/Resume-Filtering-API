@@ -7,7 +7,7 @@ def extract_text_and_links(pdf_path):
         
         pdf_reader = PyPDF2.PdfFileReader(pdf_file)
 
-        for page_number in range(len(pdf_reader.pages)):
+        for page_number in range(pdf_reader.numPages)):
             page = pdf_reader.getPage(page_number)
             text = page.extractText()
 
