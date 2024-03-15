@@ -61,5 +61,3 @@ def does_resume_have_live_links(path):
         return True
     else:
         return False
-
-print(does_resume_have_live_links("Lakshya Runwal Resume.pdf"))
