@@ -5,9 +5,9 @@ from urllib.parse import urlparse
 def extract_text_and_links(pdf_path):
     with open(pdf_path, 'rb') as pdf_file:
         
-        pdf_reader = PyPDF2.PdfReader(pdf_file)
+        pdf_reader = PyPDF2.PdfFileReader(pdf_file)
 
-        for page_number in range(pdf_reader.numPages):
+        for page_number in range(len(pdf_reader.pages)):
             page = pdf_reader.getPage(page_number)
             text = page.extractText()
 
