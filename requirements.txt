@@ -1,4 +1,4 @@
-PyPDF2=2.12.1
+PyPDF2==2.12.1
 fastapi
 python-multipart
 uvicorn
