@@ -35,4 +35,4 @@ async def check_live_links(file: UploadFile = File(...)):
 
 
 import uvicorn
-uvicorn.run(app)
+uvicorn.run(app,host="0.0.0.0", port=8000)
