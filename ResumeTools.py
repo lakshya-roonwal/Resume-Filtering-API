@@ -62,6 +62,4 @@ def does_resume_have_live_links(path):
     else:
         return False
 
-
-
-print(does_resume_have_live_links('VAIBHAV_Resume.pdf'))
+# Main Function to export 

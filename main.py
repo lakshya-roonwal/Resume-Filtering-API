@@ -10,11 +10,7 @@ app=FastAPI()
 
 @app.get('/')
 def home():
-    return {'data':"Welcome to home page"}
-
-@app.get('/contact')
-def home():
-    return {'data':"Welcome to contact page"}
+    return {'Message':"Welcome to resume filtering App to the /check_live_links POST route to acess the feature"}
 
 
 @app.post("/check_live_links")
