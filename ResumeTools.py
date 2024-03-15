@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 def extract_text_and_links(pdf_path):
     with open(pdf_path, 'rb') as pdf_file:
         
-        pdf_reader = PyPDF2.PdfFileReader(pdf_file)
+        pdf_reader = PyPDF2.PdfReader(pdf_file)
 
         for page_number in range(pdf_reader.numPages):
             page = pdf_reader.getPage(page_number)
@@ -62,4 +62,4 @@ def does_resume_have_live_links(path):
     else:
         return False
 
-# Main Function to export 
+print(does_resume_have_live_links("Lakshya Runwal Resume.pdf"))
